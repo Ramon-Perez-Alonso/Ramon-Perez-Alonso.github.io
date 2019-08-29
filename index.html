@@ -9,7 +9,7 @@ layout: default
         <div class="row">
             <div class="col-sm-6">
 			<div id="about" class="about">
-                <h3 style="margin-top:1.5em;">Welcome!</h3>
+                <h3 style="margin-top:0.5em;">Welcome!</h3>
                 <p>My name is Ramón and I am an American Licensed Master Social Worker (LMSW) currently living and working in Brest, France. During my studies I developed extensive experience editing and proofreading academic articles in a variety of fields from behavioral to earth science for submission to peer reviewed journals.  I also worked with many undergraduate and graduate students, for whom English is a second language, to develop their writing skills.</p>
 				<p>I will work with you to enhance and improve your vocabulary, flow, and style for academic writing in US English.</p>
             </div>
@@ -168,6 +168,13 @@ layout: default
 			<svg class="icon icon-map-marker"><use xlink:href="#icon-map-marker"></use></svg>
 			<h3>Location</h3>
 				<p>
+				<script language="JavaScript">
+					var username = {{ site.contact.address.user }};
+					var hostname = {{ site.contact.address.host }};
+					var linktext = username + "@" + hostname ;
+					document.write("<a href='" + "mail" + "to:" + username + "@" + hostname + "'>" + linktext + "</a>");
+				</script>
+					
 					{{ site.contact.address }}
 				</p>
 		</div> 
