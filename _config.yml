@@ -19,6 +19,9 @@ contact:
 #    phone: 932 50 540
 #    emergency: 931 53 234
     email: R.Perez.Alonso.business@gmail.com
+    mail:
+        user: R.Perez.Alonso.business
+        host: gmail.com
     address: Brest, <br> France
 
 # Opening hours
