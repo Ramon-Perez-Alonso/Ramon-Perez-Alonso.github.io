@@ -1,0 +1,34 @@
+---
+lang: fr
+---
+
+- icon: icon-papers
+  title: Peer reviewed Articles
+  description: >
+    Copyediting/Proofreading to present your research in the clearest and most succinct manner while maintaining the submission guidelines of the intended journal.
+  pricing: 30 EU per 250 words
+
+- icon: icon-globe
+  title: Commercial 
+  description: | 
+    Whether it’s publicity, a proposal, or even an official post from your business.  I can ensure it gets the message across as effectively as possible to your target market or audience.
+  pricing: 30 EU per 250 words
+  
+- icon: icon-resume
+  title: CV, Cover Letters
+  description: | 
+    Generate a modular CV and cover letter to present yourself as the ideal candidate. 
+  pricing: 30 EU per hour
+  
+- icon: icon-pen
+  title: Academic Assignements
+  description: | 
+    Submit the draft of your assignment in english along with the prompt and we may either remotely or in-person go over corrections and establish an outline you can use moving forward in your career as a student.
+  pricing: 25 EU per hour (30 EU per hour for rush job)
+  
+  
+- icon: icon-tutoring2
+  title: Tutoring 
+  description: | 
+    One on one session to improve your conversational or presentation skills or to go over specific text you need help with.
+  pricing: 30 EU per hour
