@@ -1,0 +1,233 @@
+---
+layout: default
+---
+
+<!-- Start Hero -->
+<div class="hero" style="background: url('{{ site.baseurl }}/img/{{ site.hero.hero_img }}') no-repeat; background-size: cover;">
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-sm-6">
+			<div id="about" class="about">
+                <h3 style="margin-top:1.5em;">Welcome!</h3>
+                <p>My name is Ramón and I am an American Licensed Master Social Worker (LMSW) currently living and working in Brest, France. During my studies I developed extensive experience editing and proofreading academic articles in a variety of fields from behavioral to earth science for submission to peer reviewed journals.  I also worked with many undergraduate and graduate students to develop their writing skills for whom English is a second language.</p>
+				<p>I will work with you to enhance and improve your vocabulary, flow, and style for academic writing in US English.</p>
+            </div>
+			</div>
+			<div class="col-sm-5 col-sm-offset-1 form">
+				<h3><svg class="icon icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg>Contact me</h3>
+				<form action="https://getsimpleform.com/messages?form_api_token={{ site.api_token }}" method="post" enctype="multipart/form-data">
+					<div class="form-field">
+						<input name="name" type="text" placeholder="Name" required>
+					</div>
+					<div class="form-field">
+						<input name="email" type="email" placeholder="Email" required>
+					</div>
+					<div class="form-field">					
+					<input type="subject" name="subject" list="services" placeholder="Subject" required />
+					<!--	<datalist id="services">
+						<option>Peer Reviewed Article</option>
+						<option>CV</option>
+						<option>Cover Letter</option>
+						<option>Academic Assignment</option>
+						<option>Science Communication</option>
+						<option>Tutoring</option>
+						</datalist>-->
+					</div>
+					<div class="form-field">
+						<textarea name="comments" placeholder="Message" required></textarea>
+					</div>
+					<div class="form-field">
+					 <input type='file' name='attachement' />
+					</div> 					 
+					<input type="submit" class="btn btn-default" value="Send">
+				</form>
+			</div>
+		</div>
+    </div>
+</div>
+
+<!-- End Hero -->
+
+
+<!-- Start Services -->
+<div id="services" class="services">
+    <div class="container-fluid">
+        <h2 class="section-title">Services</h2>
+		
+        <div class="row">
+            {% for service in site.data.services %}
+<!--                 <div class="col-sm-12 col-md-2p4">
+ -->
+                <div class="col-sm-6 col-md-3">
+					<div class="icon-box">
+                        <svg class="icon {{ service.icon }}"><use xlink:href="#{{ service.icon }}"></use></svg>
+                        <h4>{{ service.title }}</h4>
+                        <p>{{ service.description | markdownify }}</p>
+                        <p>{{ service.pricing | markdownify }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+		</div>
+    </div>
+</div>
+<!-- End Services -->
+
+<!-- Start Instructions for Submission -->
+<div id="instructions" class="services" style="background-image: url('{{ site.baseurl }}/img/{{ site.instructions.instructions_img }}');">
+    <div class="container-fluid">
+		<h2 class="section-title">Instructions for Submission</h2>
+		
+		<div class="row" style="margin-left: 5%;margin-right: 5%">
+
+			For articles intended for peer reviewed journals please use the contact form or email me:
+			<ol>
+				<li>Name and contact info of author(s) and affiliation(s).</li>
+				<li>Have you previously submitted this article before?  If yes, submit reviewer's comments and your responses.</li>
+				<li>Please include any references and figures.</li>
+				<li>Funding agency details.</li>
+			</ol> 
+ 
+			Are you a student with an assignment for academic credit:
+			<ol>
+				<li>Please submit assignment prompt and draft and I will send you a quote that we will stick to should you choose to engage services.</li>
+			</ol> 
+		
+			Are you a business or communications department?
+		<ol>
+		<li>Please contact me with specifics regarding your needs plus a few details about your organization/department.</li>
+		</ol> 
+		</div>
+	</div>
+</div>		
+<!-- End Instructions for Submission -->
+
+<!-- Start Pricing -->
+<div id="Pricing" class="services">
+    <h2 class="section-title">Pricing</h2>
+    <div class="container-fluid">
+        <div class="row" style="margin-left: 5%;margin-right: 5%">
+		<P>If submitting an article for a peer reviewed journal there is a flat rate of 30 euros per 250 words.  </P>
+
+		<P>Most other standard work will be billed at 30 euros per hour.  </P>
+		
+		<P>Special pricing will be applied to longer documents, second drafts, and revisions. Contact me for a quote.</P>
+		</div>
+    </div>
+</div>		
+<!-- End Pricing -->
+
+<!-- Start Testimonials -->
+<!-- <div id="testimonials" class="testimonials parallax" style="background-image: url('{{ site.baseurl }}/img/{{ site.testimonials.testimonials_img }}');">
+    <div class="overlay-container">
+        <div class="overlay"></div>
+        <div class="container-fluid">
+            <div id="testimonial-carousel">
+                {% for testimonial in site.data.testimonials %}
+                    <div class="testimonial-item">
+                        <svg class="icon icon-quote-left"><use xlink:href="#icon-quote-left"></use></svg>
+                        <blockquote>
+                            <p>{{ testimonial.description }}</p>
+                            <footer>
+                                {{ testimonial.name }}
+                                <small>{{ testimonial.title }}</small>
+                            </footer>
+                        </blockquote>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- End Testimonials -->
+
+<!-- Start 3 columns -->
+<div id="contact" class="contact">
+
+	<div class="three-shade-col">
+		<div class="col-sm-4">
+			<svg class="icon icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg>
+			<h3>Contact Us</h3>
+			<ul>
+				{% if site.contact.phone %}<li><strong>Phone:</strong> {{ site.contact.phone }}</li>{% endif %}
+				{% if site.contact.emergency %}<li><strong>Emergency:</strong> {{ site.contact.emergency }}</li>{% endif %}
+				{% if site.contact.email %}<li><strong>Email:</strong> {{ site.contact.email }}</li>{% endif %}
+			</ul>
+		</div>
+		<div class="col-sm-4">
+			<svg class="icon icon-clock-o"><use xlink:href="#icon-clock-o"></use></svg>
+			<h3>Opening Hours</h3>
+			<table>
+				<tbody>
+					<tr>
+						<td>Monday – Friday</td>
+						<td>{{ site.monday_friday }}</td>
+					</tr>
+					<tr>
+						<td>Saturday</td>
+						<td>{{ site.saturday }}</td>
+					</tr>
+                 <tr>
+                    <td>Response Time</td>
+                    <td>{{ site.response_time }}</td>
+                </tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-4">
+			<svg class="icon icon-map-marker"><use xlink:href="#icon-map-marker"></use></svg>
+			<h3>Location</h3>
+				<p>
+					{{ site.contact.address }}
+				</p>
+		</div> 
+	</div>
+</div>
+
+<!-- End 3 columns -->
+
+<!-- Start Our team -->
+<!-- <div id="team" class="team"> 
+    <h2 class="section-title">Our Team</h2> 
+    <div id="team-carousel">
+    {% for member in site.data.team %}
+        <div class="expandable-box">
+            <div class="expandable-box-top">
+                <img src="{{ site.baseurl }}/img/{{ member.image }}" alt="{{ member.name }}">
+                <h4>{{ member.name }}</h4>
+            </div>
+            <div class="expandable-box-bottom">
+                <a href="mailto:{{ member.email }}" data-toggle="tooltip" data-placement="bottom" title="{{ member.email }}"><svg class="icon icon-envelope"><use xlink:href="#icon-envelope"></use></svg></a>
+                </a>
+                <a href="tel:{{ member.phone }}" data-toggle="tooltip" data-placement="bottom" title="{{ member.phone }}"><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg></a>
+                </a>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+</div>-->
+<!-- End Our team --> 
+
+<!-- Start Gallery -->
+<!--<div id="gallery" class="gallery">
+        
+    <h2 class="section-title">Gallery</h2>
+
+    {% for images in site.data.gallery %}
+        <a href="{{ site.baseurl }}/img/gallery/large/{{ images.image_large }}" class="gallery-item expandable-box image-link">
+            <div class="expandable-box-top">
+                <img src="{{ site.baseurl }}/img/gallery/thumb/{{ images.image_thumb }}" alt="{{ images.image_alt }}">
+            </div>
+            <div class="expandable-box-bottom">
+                <span><svg class="icon icon-chain"><use xlink:href="#icon-chain"></use></svg></span>
+            </div>
+        </a>
+    {% endfor %}
+
+</div>-->
+<!-- End Gallery -->
+
+<!-- Start Map -->
+<!--<div id="location" class="map" data-zoom="{{ site.map.zoom }}" data-address="{{ site.map.address }}" data-address-details="<img src='{{ site.map.address_details }}'>"></div>
+-->
+<!-- End Map -->
