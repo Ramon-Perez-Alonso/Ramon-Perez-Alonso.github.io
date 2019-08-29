@@ -81,9 +81,9 @@ layout: default
         	<div class="row">
            	 {% for instruction in site.data.instructions %}
 	               <div class="col-sm-6 col-md-4">
-					<div class="icon-box">
+			<div class="noicon-box">
                         <h4>{{ instruction.title }}</h4>
-                        <P STYLE="text-align:right">{{ instruction.description | markdownify }}</P>
+                        <P>{{ instruction.description | markdownify }}</P>
                     	</div>
                 </div>
             {% endfor %}
