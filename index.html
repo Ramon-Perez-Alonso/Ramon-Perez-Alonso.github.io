@@ -59,7 +59,7 @@ layout: default
             {% for service in site.data.services %}
 <!--                 <div class="col-sm-12 col-md-2p4">
  -->
-                <div class="col-sm-6 col-md-3">
+                <div class="col-sm-6 col-md-4">
 					<div class="icon-box">
                         <svg class="icon {{ service.icon }}"><use xlink:href="#{{ service.icon }}"></use></svg>
                         <h4>{{ service.title }}</h4>
@@ -83,7 +83,7 @@ layout: default
 	               <div class="col-sm-6 col-md-4">
 					<div class="icon-box">
                         <h4>{{ instruction.title }}</h4>
-                        <p>{{ instruction.description | markdownify }}</p>
+                        <p align="left">{{ instruction.description | markdownify }}</p>
                     	</div>
                 </div>
             {% endfor %}
