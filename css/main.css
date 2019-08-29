@@ -4550,6 +4550,12 @@ strong {
     .gallery-item {
     width: 25%}
 }
+.noicon-box {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #fff;
+    text-align: left}
 .gallery-item .icon {
     font-size: 2rem}
 .icon {
