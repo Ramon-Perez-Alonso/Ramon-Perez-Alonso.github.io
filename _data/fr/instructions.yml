@@ -1,3 +1,24 @@
 ---
 lang: fr
 ---
+
+- title: Articles revus par des pairs
+  description: |-
+    Incluez avec votre brouillon:
+    * Nom(s), contact(s) et affiliation(s) des auteur(s).
+    * Nom du journal dans lequel l'article paraîtra.
+    * Figures et références .
+    * Sources de financement.  
+    * Si il s'agit d'une re-soumission ou révision, les commentaires des reviewers et vos réponses.
+  
+- title: Étudiant / Devoirs ou Projets
+  description: |  
+    Veuilliez m'envoyer:
+    * L'énoncé
+    * Le brouillon
+    
+    Je vous communique une estimation du coût et nous nous mettrons d'accord avant de commencer.
+    
+- title: Companies ou Communications Departments
+  description: |  
+    Veuilliez communiquer vos besoins specifiques et m'indiquer queslques détails à propos de votre organisation/département
