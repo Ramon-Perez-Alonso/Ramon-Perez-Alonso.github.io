@@ -24,7 +24,7 @@ contact:
 # Opening hours
 monday_friday: 9:00 – 18:00
 saturday: 10:00 – 13:00
-response_time: within 24h
+response_time: within 48h
 # Testimonials
 testimonials:
     testimonials_img: parallax.jpg
