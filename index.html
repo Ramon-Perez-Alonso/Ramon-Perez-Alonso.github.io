@@ -78,25 +78,15 @@ layout: default
     <div class="container-fluid">
 		<h2 class="section-title">Instructions for Submission</h2>
 		
-		<div class="row" style="margin-left: 5%;margin-right: 5%">
-
-			For articles intended for peer reviewed journals please use the contact form or email me:
-			<ol>
-				<li>Name and contact info of author(s) and affiliation(s).</li>
-				<li>Have you previously submitted this article before?  If yes, submit reviewer's comments and your responses.</li>
-				<li>Please include any references and figures.</li>
-				<li>Funding agency details.</li>
-			</ol> 
- 
-			Are you a student with an assignment for academic credit:
-			<ol>
-				<li>Please submit assignment prompt and draft and I will send you a quote that we will stick to should you choose to engage services.</li>
-			</ol> 
-		
-			Are you a business or communications department?
-		<ol>
-		<li>Please contact me with specifics regarding your needs plus a few details about your organization/department.</li>
-		</ol> 
+        	<div class="row">
+           	 {% for instruction in site.data.instructions %}
+	               <div class="col-sm-6 col-md-3">
+					<div class="icon-box">
+                        <h4>{{ instruction.title }}</h4>
+                        <p>{{ instruction.description | markdownify }}</p>
+                    	</div>
+                </div>
+            {% endfor %}
 		</div>
 	</div>
 </div>		
