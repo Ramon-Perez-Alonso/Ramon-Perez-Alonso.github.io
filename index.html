@@ -142,12 +142,7 @@ layout: default
 				{% if site.contact.phone %}<li><strong>Phone:</strong> {{ site.contact.phone }}</li>{% endif %}
 				{% if site.contact.emergency %}<li><strong>Emergency:</strong> {{ site.contact.emergency }}</li>{% endif %}
 				{% if site.contact.email %}<li><strong>Email:</strong> {{ site.contact.email }}</li>{% endif %}
-				<script language="JavaScript">
-					var username = {{ site.contact.mail.user }};
-					var hostname = {{ site.contact.mail.host }};
-					var linktext = username + "@" + hostname ;
-					document.write("<a href='" + "mail" + "to:" + username + "@" + hostname + "'>" + linktext + "</a>");
-				</script>
+				<a href="mailto:{{ site.email | encode_email }}" title="Contact me">Contact me</a>
 			</ul>
 		</div>
 		<div class="col-sm-4">
