@@ -14,8 +14,8 @@ audio: not([controls]) {
     height: 0}
 [hidden],template {
     display: none}
-a {
-    background-color: transparent}
+/*a {
+    background-color: transparent}*/
 /*a:active,a:hover {
     outline: 0}*/
 abbr[title] {
