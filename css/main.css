@@ -14,10 +14,10 @@ audio: not([controls]) {
     height: 0}
 [hidden],template {
     display: none}
-/*a {
-    background-color: transparent}*/
-/*a:active,a:hover {
-    outline: 0}*/
+a {
+    background-color: transparent}
+a:active,a:hover {
+    outline: 0}
 abbr[title] {
     border-bottom: 1px dotted}
 b,strong {
@@ -107,12 +107,12 @@ td,th {
     text-shadow: none !important}
 a,a:visited {
     text-decoration: underline}
-/*a[href]:after {
-    content: " (" attr(href) ")"}*/
+a[href]:after {
+    content: " (" attr(href) ")"}
 abbr[title]:after {
     content: " (" attr(title) ")"}
-/*a[href^="#"]:after,a[href^="javascript: "]:after {
-    content: ""}*/
+a[href^="#"]:after,a[href^="javascript: "]:after {
+    content: ""}
 pre,blockquote {
     border: 1px solid #999;
     page-break-inside: avoid}
