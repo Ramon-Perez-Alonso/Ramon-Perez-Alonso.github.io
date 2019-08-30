@@ -12,7 +12,7 @@ hero:
     hero_description: "Copy Editing, Proofreading, Academic Writing Advisement."
 
 # Contact form
-api_token: # Enter API token here
+api_token: 766cb9bbe967659e3b27a6f70734e3ca # Enter API token here
 
 # Contact info
 contact:
