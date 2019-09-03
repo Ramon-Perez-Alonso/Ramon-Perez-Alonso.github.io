@@ -9,21 +9,29 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand scroll" href="#top"><img src="{{ site.logo_url }}" alt="{{ site.title }}"></a>
+            <a class="navbar-brand scroll" href="#top"><img src="{{ site.baseurl }}/img/{{ site.logo_url }}" alt="{{ site.title }}"></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
+
         <div class="collapse navbar-collapse scrollspy" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
+		<ul class="nav navbar-nav navbar-right">
                 <li><a class="scroll" href="#top">Home</a></li>
 <!--                 <li><a class="scroll" href="#about">About</a></li> -->
 				<li><a class="scroll" href="#services">Services</a></li>
 				<li><a class="scroll" href="#instructions">Instructions</a></li>
 				<li><a class="scroll" href="#Pricing">Pricing</a></li>
 <!--                 <li><a class="scroll" href="#testimonials">Testimonials</a></li>
- -->                <li><a class="scroll" href="#contact">Contact</a></li>				
+ -->            <li><a class="scroll" href="#contact">Contact</a></li>	
+				<a class="btn btn-primary dropdown-toggle navbar-nav" data-toggle="dropdown" href="{{site.url}}" style = "margin: 12.5px 0;padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px">EN <span class="caret"></span></a>
+				<ul class="dropdown-menu">
+        <li><a href="{{site.url}}/fr">FR</a></li>
+
             </ul>
-        </div>
+		</div>
+		 
     </div>
 </nav>
 <!-- End Header -->
