@@ -6,16 +6,15 @@ layout: default
 <div class="hero" style="background:  linear-gradient(
                      rgba(20,20,20, .3), 
                      rgba(20,20,20, .3)),
-			 url('{{ site.baseurl }}/img/{{ site.hero.hero_img }}') no-repeat; background-size: 100% 100%; background-position: 50% 25%; background-color: rgba(0,0,0,0.5)">
+			 url('{{ site.baseurl }}/img/{{ site.hero.hero_img }}') no-repeat; background-size: cover; background-position: 50% 25%; background-color: rgba(0,0,0,0.5)">
     <div class="container-fluid">
 
         <div class="row">
             <div class="col-sm-6">
 			<div id="about" class="about" >
 		<div style="color:white">
-                <h3 style="margin-top:0.5em;color:white">Welcome!</h3>
-                <p>My name is Ramón and I am an American Licensed Master Social Worker (LMSW) currently living and working in Brest, France. During my studies I developed extensive experience editing and proofreading academic articles in a variety of fields from behavioral to earth science for submission to peer reviewed journals.  I also worked with many undergraduate and graduate students, for whom English is a second language, to develop their writing skills.</p>
-				<p>I will work with you to enhance and improve your vocabulary, flow, and style for academic writing in English.</p>
+                <h3 style="margin-top:0.5em;color:white">{{ site.data.about.title }}</h3>
+                {{ site.data.about.description | markdownify }}
 		</div>
 		    </div>
 			</div>
@@ -102,11 +101,7 @@ layout: default
     <h2 class="section-title">Pricing</h2>
     <div class="container-fluid">
         <div class="row" style="margin-left: 5%;margin-right: 5%">
-		<P>If submitting an article for a peer reviewed journal there is a flat rate of 30 euros per 250 words.  </P>
-
-		<P>Most other standard work will be billed at 30 euros per hour.  </P>
-		
-		<P>Reduced pricing will be applied to longer documents, second drafts, revisions, and currently enrolled students. Contact me for information.</P>
+		{{site.data.pricing | markdownify}}
 		</div>
     </div>
 </div>		
