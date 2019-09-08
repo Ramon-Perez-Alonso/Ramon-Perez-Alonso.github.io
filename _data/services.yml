@@ -1,30 +1,32 @@
 - icon: icon-papers
-  title: Peer reviewed Articles
+  title:     Articles scientifiques
   description: >
-    Copyediting/Proofreading to present your research in the clearest and most succinct manner while maintaining the submission guidelines of the intended journal.
-  pricing: 30 EU per 250 words
+    Travail éditorial et corrections pour présenter votre recherche de manière claire et concise tout en respectant les directives et les normes de publication de la revue scientifique pour laquelle vous allez écrire.
+    
+  pricing: 30 EU par 250 mots
 
 - icon: icon-globe
-  title: Commercial 
+  title:  Offres commerciales
+
   description: | 
-    Whether it’s publicity, a proposal, or even an official post from your business I can ensure it gets the message across as effectively as possible to your target market or audience.
-  pricing: 30 EU per 250 words
+    Que ce soit de la publicité, une plaquette, une proposition ou même un communiqué officiel de votre entreprise, je peux m’assurer que le message soit transmis le plus efficacement possible à votre marché ou au public que vous ciblez.
+  pricing: 30 EU per 250 mots
   
 - icon: icon-resume
-  title: CV, Cover Letters
+  title: CV, Lettres de Motivation
   description: | 
-    Generate a modular CV and cover letter to present yourself as the ideal candidate. 
-  pricing: 30 EU per hour
+    Je vous aide à générer un CV modulaire et/ou une lettre de motivation pour vous présenter comme le candidat idéal. 
+  pricing: 30 EU par heure
   
 - icon: icon-pen
-  title: Academic Assignements
+  title: Projets universitaires
   description: | 
-    Submit the draft of your assignment in english along with the prompt and we may either remotely or in-person go over corrections and establish an outline you can use moving forward in your career as a student.
-  pricing: 25 EU per hour (30 EU per hour for rush job)
+    Soumettez-moi le brouillon de votre travail en anglais avec l’énoncé . Nous pourrons soit procéder aux corrections à distance, soit en personne, et établir des stratégies de travail qui vous serviront pour vos projets futurs.
+  pricing: 25 EU par heure (30 EU par heure pour travail urgent)
   
   
 - icon: icon-tutoring2
-  title: Tutoring 
+  title: Cours Particuliers
   description: | 
-    One on one session to improve your conversational or presentation skills or to go over specific text you need help with.
-  pricing: 30 EU per hour
+    Je vous propose des ateliers individuels  pour améliorer vos compétences en conversation, en présentation ainsi que pour passer en revue les documents pour lesquels vous avez besoin d’aide.
+  pricing: 30 EU par heure

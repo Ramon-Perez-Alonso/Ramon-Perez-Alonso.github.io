@@ -19,16 +19,16 @@ layout: default
 		    </div>
 			</div>
 			<div class="col-sm-5 col-sm-offset-1 form">
-				<h3><svg class="icon icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg>Contact me</h3>
+				<h3><svg class="icon icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg>Contactez moi</h3>
 				<form action="https://getsimpleform.com/messages?form_api_token={{ site.api_token }}" method="post" enctype="multipart/form-data">
 					<div class="form-field">
-						<input name="name" type="text" placeholder="Name" required>
+						<input name="name" type="text" placeholder="Nom" required>
 					</div>
 					<div class="form-field">
 						<input name="email" type="email" placeholder="Email" required>
 					</div>
 					<div class="form-field">					
-					<input type="subject" name="subject" list="services" placeholder="Subject" required />
+					<input type="subject" name="subject" list="services" placeholder="Sujet" required />
 					<!--	<datalist id="services">
 						<option>Peer Reviewed Article</option>
 						<option>CV</option>
@@ -44,7 +44,7 @@ layout: default
 					<div class="form-field">
 					 <input type='file' name='attachement' />
 					</div> 					 
-					<input type="submit" class="btn btn-default" value="Send">
+					<input type="submit" class="btn btn-default" value="Envoyer">
 				</form>
 			</div>
 		</div>
@@ -57,7 +57,7 @@ layout: default
 <!-- Start Services -->
 <div id="services" class="services">
     <div class="container-fluid">
-        <h2 class="section-title">Services</h2>
+        <h2 class="section-title">Prestations</h2>
 		
         <div class="row">
             {% for service in site.data.services %}
@@ -80,7 +80,9 @@ layout: default
 <!-- Start Instructions for Submission -->
 <div id="instructions" class="services" style="background-image: url('{{ site.baseurl }}/img/{{ site.instructions.instructions_img }}');">
     <div class="container-fluid">
-		<h2 class="section-title">Instructions for Submission</h2>
+		<h2 class="section-title" style = "margin-bottom = 0; padding:0; line-height:0px;">Mode d'Emploi</h2>
+		<h4 style="text-align: center; padding:0px 0px 30px 0px; margin-top = -140px; line-height:10px;" >La démarche à suivre au moment de poster vos demandes :
+</h4>
 		
         	<div class="row">
            	 {% for instruction in site.data.instructions %}
@@ -98,7 +100,7 @@ layout: default
 
 <!-- Start Pricing -->
 <div id="Pricing" class="services">
-    <h2 class="section-title">Pricing</h2>
+    <h2 class="section-title">Tarifs</h2>
     <div class="container-fluid">
         <div class="row" style="margin-left: 5%;margin-right: 5%">
 		{{site.data.pricing | markdownify}}
@@ -147,19 +149,19 @@ layout: default
 		</div>
 		<div class="col-sm-4">
 			<svg class="icon icon-clock-o"><use xlink:href="#icon-clock-o"></use></svg>
-			<h3>Opening Hours</h3>
+			<h3>Horaires</h3>
 			<table>
 				<tbody>
 					<tr>
-						<td>Monday – Friday</td>
+						<td>Lundi – Vendredi</td>
 						<td>{{ site.monday_friday }}</td>
 					</tr>
 					<tr>
-						<td>Saturday</td>
+						<td>Samedi</td>
 						<td>{{ site.saturday }}</td>
 					</tr>
                  <tr>
-                    <td>Response Time</td>
+                    <td>Temps de réponse</td>
                     <td>{{ site.response_time }}</td>
                 </tr>
 				</tbody>
@@ -167,7 +169,7 @@ layout: default
 		</div>
 		<div class="col-sm-4">
 			<svg class="icon icon-map-marker"><use xlink:href="#icon-map-marker"></use></svg>
-			<h3>Location</h3>
+			<h3>Emplacement</h3>
 				<p>					
 					{{ site.contact.address }}
 				</p>
